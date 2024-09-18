@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@nuxt/ui": "^2.18.4",
+    "@tresjs/nuxt": "^3.0.7",
     "nuxt": "^3.13.0",
+    "three": "^0.168.0",
     "vue": "latest",
     "vue-router": "latest"
   }
