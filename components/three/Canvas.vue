@@ -3,13 +3,13 @@ import { OrbitControls } from '@tresjs/cientos'
 </script>
 
 <template>
-  <TresCanvas window-size clear-color="#F0F0F0">
+  <TresCanvas class="pointer-events-none">
     <TresPerspectiveCamera :fov="75" />
 
     <OrbitControls />
 
     <Suspense>
-      <ThreeModel />
+      <slot name="model"/>
     </Suspense>
 
     <TresGridHelper />
@@ -19,3 +19,5 @@ import { OrbitControls } from '@tresjs/cientos'
     <TresAmbientLight color="#FFFFFF" :intensity="10" />
   </TresCanvas>
 </template>
+
+<style></style>
